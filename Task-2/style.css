@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #065e2e;
+  padding: 20px 50px;
+}
+header img {
+  height: 22px;
+}
+header nav {
+  display: flex;
+  gap: 70px;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+header nav a:hover {
+  color: black;
+}
+header .btns {
+  display: flex;
+  gap: 15px;
+}
+header .btns button {
+  padding: 7px 15px;
+  background-color: white;
+  outline: 0;
+  border: 0;
+  border-radius: 3px;
+}
+header .btns button:hover {
+  background-color: black;
+  color: white;
+}
+
+main .hero-section {
+  position: relative;
+}
+main .hero-section img {
+  width: 100%;
+  height: 85vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .hero-section .content {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  padding: 5px;
+}
+main .about {
+  padding: 50px 100px;
+}
+main .about h1 {
+  text-align: center;
+}
+main .about .wrapper {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+main .about .wrapper img {
+  height: 300px;
+}
+main .about .wrapper h3 {
+  color: rgb(77, 77, 77);
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 30px;
+}
+main .product {
+  display: flex;
+  flex-direction: column;
+  justify-content: inherit;
+  align-items: inherit;
+  gap: 5px;
+  margin-top: 20px;
+}
+main .product h1 {
+  text-align: center;
+}
+main .product .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: inherit;
+  margin-top: 20px;
+}
+main .product .cards .card {
+  width: 300px;
+  border: 1px solid;
+  padding: 20px;
+  border-radius: 6px;
+}
+main .product .cards .card img {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: inherit;
+  padding: 50px 70px;
+  background-color: black;
+  color: white;
+  margin-top: 60px;
+}
+footer h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+footer .delivery img {
+  margin-top: 10px;
+}
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: inherit;
+  gap: 15px;
+  width: 30%;
+}
+footer .contact span {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+footer .Our-Policies {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: inherit;
+  gap: 15px;
+}
+footer .Our-Policies a {
+  text-decoration: none;
+  color: white;
+}
+footer .quick-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: inherit;
+  gap: 15px;
+}
+footer .quick-link a {
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

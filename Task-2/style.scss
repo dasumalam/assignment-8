@@ -1,0 +1,157 @@
+@use "./utils/varialbes" as v;
+@use "./utils/mixins" as m;
+@use "./utils/colors" as color;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  @include m.flex(row, space-between, center);
+  background-color: color.$primary-color;
+  padding: 20px 50px;
+
+  img {
+    height: 22px;
+  }
+
+  nav {
+    display: flex;
+    gap: 70px;
+    a {
+      text-decoration: none;
+      color: color.$text-color;
+      &:hover {
+        color: color.$secondary-color;
+      }
+    }
+  }
+  .btns {
+    display: flex;
+    gap: v.$gap;
+    button {
+      padding: 7px 15px;
+      background-color: color.$text-color;
+      outline: 0;
+      border: 0;
+      border-radius: 3px;
+
+      &:hover {
+        background-color: color.$secondary-color;
+        color: color.$text-color;
+      }
+    }
+  }
+}
+
+main {
+  .hero-section {
+    position: relative;
+    img {
+      width: 100%;
+      height: 85vh;
+      object-fit: cover;
+    }
+    .content {
+      position: absolute;
+      top: 50%;
+      width: 50%;
+      padding: 5px;
+    }
+  }
+  .about {
+    padding: 50px 100px;
+
+    h1 {
+      text-align: center;
+    }
+    .wrapper {
+      display: flex;
+      gap: 50px;
+      margin-top: v.$mt;
+
+      img {
+        height: 300px;
+      }
+      h3 {
+        color: rgb(77, 77, 77);
+        font-weight: 400;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        line-height: 30px;
+      }
+    }
+  }
+  .product {
+    @include m.flex(column);
+    gap: 5px;
+    margin-top: v.$mt;
+
+    h1 {
+      text-align: center;
+    }
+    .cards {
+      @include m.flex(row, space-around);
+      margin-top: v.$mt;
+      .card {
+        width: 300px;
+        border: 1px solid;
+        padding: 20px;
+        border-radius: 6px;
+        img {
+          width: 100%;
+          margin: 10px 0;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  @include m.flex(row, space-between);
+  padding: 50px 70px;
+  background-color: color.$secondary-color;
+  color: color.$text-color;
+  margin-top: 60px;
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .delivery {
+    img {
+      margin-top: 10px;
+    }
+  }
+  .contact {
+    @include m.flex(column, start);
+    gap: v.$gap;
+    width: 30%;
+
+    span {
+      @include m.flex(row, start, center);
+      gap: v.$gap;
+    }
+  }
+  .Our-Policies {
+    @include m.flex(column, start);
+    gap: v.$gap;
+
+    a {
+      text-decoration: none;
+      color: color.$text-color;
+    }
+  }
+  .quick-link {
+    @include m.flex(column, start);
+    gap: v.$gap;
+
+    a {
+      text-decoration: none;
+      color: color.$text-color;
+    }
+  }
+}
